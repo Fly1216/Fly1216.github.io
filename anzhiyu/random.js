@@ -1,1 +1,1 @@
-var posts=["2023/04/20/读写HBase/","2023/04/20/hello-world/","2023/04/20/电商例题文档/"];function toRandomPost(){pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);};
+var posts=["2023/04/20/读写HBase/","2023/04/20/电商例题文档/"];function toRandomPost(){pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);};
