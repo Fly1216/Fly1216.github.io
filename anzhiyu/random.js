@@ -1,1 +1,1 @@
-var posts=["2021/12/10/可视化手册/","2023/03/12/电商例题文档/","2023/02/27/读写HBase/"];function toRandomPost(){pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);};
+var posts=["2023/04/26/Hudi学习文档-概述/","2021/12/10/可视化手册/","2023/03/12/电商例题文档/","2023/04/26/Hudi学习文档-编译/","2023/02/27/读写HBase/"];function toRandomPost(){pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);};
