@@ -8,7 +8,7 @@
       <link href="/2023/06/07/%E5%A4%87%E5%BF%98%E5%BD%95/"/>
       <url>/2023/06/07/%E5%A4%87%E5%BF%98%E5%BD%95/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="HDFS安全模式"><a href="#HDFS安全模式" class="headerlink" title="HDFS安全模式"></a>HDFS安全模式</h1><ul><li><p>退出安全模式</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hdfs dfsadmin -safemode leave</span><br></pre></td></tr></table></figure></li><li><p>强制退出安全模式</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hdfs dfsadmin -safemode forceExit</span><br></pre></td></tr></table></figure></li><li><p>获取安全模式状态</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hdfs dfsadmin -safemode get</span><br></pre></td></tr></table></figure></li></ul>]]></content>
       
       
       <categories>
