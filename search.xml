@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Spark调优笔记</title>
+      <link href="/2023/06/09/Spark%E8%B0%83%E4%BC%98%E7%AC%94%E8%AE%B0/"/>
+      <url>/2023/06/09/Spark%E8%B0%83%E4%BC%98%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<h1 id="关于持久化"><a href="#关于持久化" class="headerlink" title="关于持久化"></a>关于持久化</h1><p><strong>persist</strong></p><p>允许用户选择一个特定的存储级别来持久化数据集。</p><p>Spark提供了多种存储级别，包括<code>MEMORY_LONY</code>、<code>MEMORY_AND_DISK</code>、<code>MEMORY_ONLY_SER</code>、<code>MEMORY_AND_DISK_SER</code>、<code>DISK_ONLY</code>、<code>OFF_HEAP</code>等</p><p><strong>cache</strong></p><p>persist的一种特殊用法，从cache将数据集以默认的存储级别<code>MEMORY_AND_DISK</code>进行持久化，即：如果内存不足存放数据集那么Spark会将数据溢出到磁盘</p><p><strong>checkpoint</strong></p><p>一种特殊的数据持久化机制，目的是通过在稳定的存储系统(如HDFS)上来保存数据切断RDD的线性依赖链。</p><p>checkpoint会使RDD的依赖关系被完全丢弃，并且涉及到磁盘I&#x2F;O，开销较大。通常我们只在必要的时候使用checkpoint，比如迭代计算和图计算。</p><p><strong>总的来说</strong></p><ul><li>persist和cache：通常用于持久化跨多个操作重用的中间数据以减少计算时间，主要目的是优化计算性能</li><li>checkpoint：通常用于防止由于RDD的依赖链过长导致的问题，主要目的是优化RDD的依赖链长度和计算的可靠性。</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> flyohh </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 大数据 </tag>
+            
+            <tag> Spark </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>段浩飞的备忘录</title>
       <link href="/2023/06/07/%E5%A4%87%E5%BF%98%E5%BD%95/"/>
       <url>/2023/06/07/%E5%A4%87%E5%BF%98%E5%BD%95/</url>
